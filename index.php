@@ -18,16 +18,55 @@
 
 </head>
 <body>
-    <div class="container.fivid">
+    
+<div class="container.fluid">
         <div class="row">
             <div class="col-md-6">
+                <div class="d-none d-sn-none d-md-block">
                 <div class="contenlogin">
                     <div class="login">
                     <h3>Bienvenidos/as</h3>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <div class="col-md-6">
+        <div class="contenlogin">
+                    <div class="login">
+                        <form action="./controllers/login.php" method="POST" class="border p-3 formlogin">
+                        <div style='margin-botton: 10px;'>
+                    <h3>Iniciar Sesion</h3>
+                </div>
+        </div>
     </div>
-    </div>
-    </div>
-    </div>
+<label>
+            <div class="input-group mb-3">
+            <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">
+            <i class="fas fa-user"></i>
+            </span>
+            </div>
+            <input type="text" name="user" class="form-control" placeholder="Usuario" required="ON">
+            </div>
+
+            
+            <div class="input-group mb-3">
+            <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">
+            <i class="fas fa-key"></i>
+            </span>
+            </div>
+            <input type="password" name="passw" class="form-control" placeholder="Contraseña" required="ON">
+            </div>
+
+            <div styles="text-aling: center;">
+                <button class="btn btn-primary btn-sn" name="acclogin">Ingresar<button>
+
+            </div>
+
+</label>
 </body>
 </html>

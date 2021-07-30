@@ -8,3 +8,8 @@
 .login{
     width: 380px;
 }
+
+.formlogin{
+    background-color: aqua;
+    opacity: 0.6;
+}
