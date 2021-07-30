@@ -8,6 +8,7 @@
     <!.. CSS>
     <link rel="stylesheet" href="./public/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="./public/css/boostrap-theme.css">
+    <link real="stylesheet" href="./public/css/estilo.css">
 
     <!.. JS ..>
     <script src="./public/js/jquery-3.5.1.slim.min.js"></script> 
