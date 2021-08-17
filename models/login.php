@@ -1,19 +1,21 @@
-<?php
-     session_start();
-     include '../models/conexion.php';
-     include '../models/login.php';
-     include '../models/procesos.php';
+<?php 
+    class login
+    {
+        public function GetDataUSer($user)
+        {
+            $row = NULL;
+            $modelo = new ConexionBD();
+            $conexion = $modelo->get_conexion();
+            $sql = "SELECT * FROM usuarios WHERE usuario = :usuario";
+            $stm = $conexion->prepare($sql);
+            $stm->bindParam(':usuario',$user);
+            $stm->execute();
 
-     if(isset($_POST['acclogin']))
-     {
-          echo $user = $_POST['user'];
-          echo "<br>";
-          echo $passw = $_POST['passw']:
-     }
-
-     else 
-     {
-          header('Location: ../index.php');
-          
-     }
+            while ($result = $stm->fetch())
+            {
+                $row[] = $result;
+            }
+            return $row;
+        }
+    }
 ?>
