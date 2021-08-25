@@ -12,7 +12,7 @@
             } 
             else 
             {
-                $user = "Admin";
+                $user = "poo";
                 $pass = "poo";
                 $host = "localhost";
                 $bd = "paw";
